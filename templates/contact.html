@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+
+{% block body_class %}contact-page{% endblock %}
+
+{% block content %}
+<section class="contact">
+    <div class="content">
+        <p><h1>We'd love to hear from you! Feel free to reach out with any questions, suggestions, or just to say hello.</h1></p>
+    </div>
+
+    <div class="contactForm">
+        <form id="contactForm" method="post">
+            {% csrf_token %}
+            {{ form.as_p }} 
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <div class="container">
+        <div class="contactInfo">
+            <div class="box">
+                <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                <div class="text">
+                    <p><h1><strong>Address:</strong> 123 Main Street, Cityville, Country <h1></p>
+                </div>
+                <div class="icon"><i class="fa fa-phone-square" aria-hidden="true"></i></div>
+                <div class="text">
+                    <p><h2><strong>Contact Number:</strong> +123 456 789</h2></p>
+                </div>                
+                <div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                <div class="text">
+                    <p><h3><strong>Email:</strong> info@example.com</h3></p>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="contactInfo">
+            <div class="box">
+                <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                <div class="text">
+                    <p><h1><strong>Address:</strong> 123 Main Street, Cityville, Country <h1></p>
+                </div>
+                <div class="icon"><i class="fa fa-phone-square" aria-hidden="true"></i></div>
+                <div class="text">
+                    <p><h2><strong>Contact Number:</strong> +123 456 789</h2></p>
+                </div>                
+                <div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                <div class="text">
+                    <p><h3><strong>Email:</strong> info@example.com</h3></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="contactInfo">
+            <div class="box">
+                <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                <div class="text">
+                    <p><h1><strong>Address:</strong> 123 Main Street, Cityville, Country <h1></p>
+                </div>
+                <div class="icon"><i class="fa fa-phone-square" aria-hidden="true"></i></div>
+                <div class="text">
+                    <p><h2><strong>Contact Number:</strong> +123 456 789</h2></p>
+                </div>                
+                <div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                <div class="text">
+                    <p><h3><strong>Email:</strong> info@example.com</h3></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock content %}

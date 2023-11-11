@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+
+{% block title %}Your Logistics Company - Home{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<div class="sect">
+    
+    <section class="hero">
+        <h2>Your Trusted Logistics Partner</h2>
+        <h2>Welcome to Your Logistics Company, where we provide efficient and <br> reliable logistics services tailored to
+            meet your unique needs. With our commitment to excellence, <br> we ensure your cargo arrives securely and on
+            time, every time.
+        </h2>
+        <a href="{%url 'getquote' %}" class="cta-button">Get Quote</a>
+    </section>
+
+    <!-- Features Section -->
+    <div class="feat">
+        <section class="features">
+            <div class="feature">
+                <h3>Ocean Freight</h3>
+                <p>Efficient and cost-effective ocean freight solutions for your international shipping needs.</p>
+                <a href="{% url 'ocean_freight' %}" class="cta-button">Learn More</a>
+            </div>
+            <div class="feature">
+                <h3>Air Freight</h3>
+                <p>Swift and reliable air freight services to meet your urgent delivery requirements.</p>
+                <a href="{% url 'air_freight' %}" class="cta-button">Learn More</a>
+            </div>
+            <div class="feature">
+                <h3>Rail Freight</h3>
+                <p>Reliable rail freight options for land-based transportation across regions.</p>
+                <a href="{% url 'rail_freight' %}" class="cta-button">Learn More</a>
+            </div>
+            <div class="feature">
+                <h3>Warehousing</h3>
+                <p>Secure and cost-effective warehousing solutions for your inventory storage and management.</p>
+                <a href="{% url 'warehousing' %}" class="cta-button">Learn More</a>
+            </div>
+            <div class="feature">
+                <h3>Customs Clearance</h3>
+                <p>Expert customs clearance services to ensure smooth and compliant international trade.</p>
+                <a href="{% url 'customs_clearance' %}" class="cta-button">Learn More</a>
+            </div>
+            <!-- Add the "Distribution" content here -->
+            <div class="feature">
+                <h3>Distribution</h3>
+                <p>Efficient distribution solutions for your products, ensuring they reach their destination on time and
+                    in
+                    optimal condition.</p>
+                <a href="{% url 'distribution' %}" class="cta-button">Learn More</a>
+            </div>
+    </div>
+    </section>
+</div>
+{% endblock %}

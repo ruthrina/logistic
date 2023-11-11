@@ -1,0 +1,88 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body_class %}about-us-page{% endblock %}
+{% block content %}
+
+
+<div class="about-us-container">
+  <div class="te">
+    <h1 class="hi">Logistic</h1>
+    <p>Logistic is a leading company in the logistics and transportation industry. We provide a wide range of services, including freight forwarding, warehousing, and supply chain management. Our mission is to deliver efficient, reliable, and cost-effective logistics solutions to our clients.</p>
+  </div>
+  <div class="about-header">
+    <h2>Welcome to Logistic</h2>
+  </div>
+
+  <div class="about-sectio">
+    <h3>Our Journey</h3>
+    <p>With years of experience in the logistics industry, Logistic has built a strong reputation for excellence. Our dedicated team of professionals works tirelessly to meet our clients' unique requirements and exceed their expectations.</p>
+  </div>
+
+  <div class="wrapper">
+    <h3>The Team</h3>
+    <p>Meet the talented members of the Logistic team. Our work is a collaborative effort, and each team member brings a unique expertise to our services.</p>
+    <div class="team">
+      <div class="team-member">
+        <img src="{% static 'image/im.jpg' %}" alt="John Doe">
+        <h4>John Doe</h4>
+        <p>CEO</p>
+      </div>
+
+      <div class="team-member">
+        <img src="{% static 'image/im.jpg' %}" alt="Jane Smith">
+        <h4>Jane Smith</h4>
+        <p>Logistics Manager</p>
+      </div>
+
+      <div class="team-member">
+        <img src="{% static 'image/im.jpg' %}" alt="Mike Johnson">
+        <h4>Mike Johnson</h4>
+        <p>Supply Chain Specialist</p>
+      </div>
+
+      <div class="team-member">
+        <img src="{% static 'image/im.jpg' %}" alt="Emily Davis">
+        <h4>Emily Davis</h4>
+        <p>Warehouse Manager</p>
+      </div>
+
+      <div class="team-member">
+        <img src="{% static 'image/im.jpg' %}" alt="Alex Turner">
+        <h4>Alex Turner</h4>
+        <p>Transportation Coordinator</p>
+      </div>
+      <div class="team-member">
+        <img src="{% static 'image/im.jpg' %}" alt="Alex Turner">
+        <h4>Alex Turner</h4>
+        <p>Transportation Coordinator</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="about-section">
+    <img src="{% static 'image/vission.jpg' %}" alt="Logistic Vision">
+    <div class="vi">
+      <h3>Vision</h3>
+      <p>Our vision is to be a global leader in logistics and supply chain management. We aim to provide innovative and sustainable solutions that drive the success of our clients and partners.</p>
+    </div>
+  </div>
+
+  <div class="about-section">
+    <div class="mi">
+      <h3>Mission</h3>
+      <p>Logistic's mission is to deliver value to our clients through efficient logistics services. We are committed to safety, sustainability, and customer satisfaction. Our goal is to make the world more connected and businesses more successful through our logistics expertise.</p>
+    </div>
+    <div class="mi-image">
+      <img src="{% static 'image/mission.jpg' %}" alt="Logistic Mission">
+    </div>
+  </div>
+
+  <div class="about-sectio">
+    <h3>Why Choose Logistic</h3>
+    <p>Choose Logistic for your logistics needs and experience reliable services, on-time deliveries, and a commitment to excellence. We take pride in connecting the world and enabling the success of our clients. Your logistics, our expertise!</p>
+  </div>
+
+</div>
+
+
+{% endblock content %}

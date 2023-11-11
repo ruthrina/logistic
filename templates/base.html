@@ -1,0 +1,75 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'base.css' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <title>{% block title %}Your Logistics Company{% endblock %}</title>
+    <!-- Add meta tags, CSS links, and other common head content here -->
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="{% url 'home' %}">
+                    <img src="{% static 'image/logistic.jpg' %}" alt="Company Logo" class="logo-image">
+                </a>
+            </div>
+            <ul>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'about_us' %}">About Us</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Services</a>
+                    <div class="dropdown-content">
+                        <a href="{% url 'ocean_freight' %}">Ocean Freight</a>
+                        <a href="{% url 'air_freight' %}">Air Freight</a>
+                        <a href="{% url 'rail_freight' %}">Rail Freight</a>
+                        <a href="{% url 'warehousing' %}">Warehousing</a>
+                        <a href="{% url 'customs_clearance' %}">Customs Clearance</a>
+                        <a href="{% url 'distribution' %}">Distribution</a>
+                        <!-- Add more service links as needed -->
+                    </div>
+                </li>
+                <li><a href="{% url 'contact' %}">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    <div class="footer">
+        <div class="foll"> <strong>
+                <h2>Follow us</h2>
+            </strong> </div>
+        <footer class="all">
+            <!-- Social Media Links -->
+            <div class="social-media">
+                <a href="#" target="_blank" class="fa fa-facebook">
+                    <span class="social-text">Facebook</span>
+                </a>
+                <a href="#" target="_blank" class="fa fa-twitter">
+                    <span class="social-text">Twitter</span>
+                </a>
+                <a href="#" target="_blank" class="fa fa-instagram">
+                    <span class="social-text">Instagram</span>
+                </a>
+                <a href="#" target="_blank" class="fa fa-youtube">
+                    <span class="social-text">YouTube</span>
+                </a>
+            </div>
+            <div class="foot">
+                <p>&copy; 2023 logistics and transportation</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

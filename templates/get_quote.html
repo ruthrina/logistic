@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block title %}Get a Quote - Your Logistics Company{% endblock %}
+
+{% block content %}
+  <section class="quote-section">
+    <form method="post" class="quote-form">
+      {% csrf_token %}
+      
+      <h2>Get a Quote</h2>
+      
+      <div class="form-group">
+        {{ form.service.label_tag }}
+        {{ form.service }}
+      </div>
+      
+      <div class="form-group">
+        {{ form.name.label_tag }}
+        {{ form.name }}
+      </div>
+      
+      <div class="form-group">
+        {{ form.phone_number.label_tag }}
+        {{ form.phone_number }}
+      </div>
+      
+      <div class="form-group">
+        {{ form.email.label_tag }}
+        {{ form.email }}
+      </div>
+      
+      <div class="form-group">
+        {{ form.company_name.label_tag }}
+        {{ form.company_name }}
+      </div>
+      
+      <div class="form-group">
+        {{ form.industry.label_tag }}
+        {{ form.industry }}
+      </div>
+      
+      <input type="submit" value="Submit Quote">
+    </form>
+  </section>
+{% endblock %}

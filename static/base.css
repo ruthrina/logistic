@@ -1,0 +1,625 @@
+/* Update your "base.css" file */
+
+/* General styles for the navigation bar */
+.navbar {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+    position: fixed;
+    top: 0;
+    left: 0; /* Set left position to 0 */
+    width: 100%; /* Full width of the viewport */
+    font-size: 20px;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.logo{
+    margin-right: 53%;
+}
+/* Add this to your "base.css" file */
+
+.logo-image {
+    width: 80px; /* Adjust the width as needed */
+     
+    display: block; /* Remove any extra sp margin: 1%; /* Remove any margin */
+}
+
+
+.navbar ul {
+    list-style: none; /* Remove bullets from the ul element */
+    padding: 0; /* Remove any padding on the ul element */
+    margin: 0; /* Remove any margin on the ul element */
+}
+
+.navbar li {
+    display: inline; /* Place li elements on the same line */
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+    font-weight: 600;
+    margin: 0 20px;
+}
+
+.navbar a:hover {
+    color: #ff9900;
+}
+
+/* Styles for the dropdown menu */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    list-style: none;
+    padding: 10px;
+      
+    
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    padding: 10%;
+}
+
+/* Update your "base.css" file with the following styles */
+
+/* Hero Section */
+/* Update your "base.css" file with the following styles */
+
+/* Features Section */
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Adjust the gap between feature items */
+    margin: 40px 0; /* Add top and bottom margin for spacing */
+}
+
+.feature {
+    flex: 0 1 calc(33.33% - 20px); /* Adjust the width for three items per line */
+    background-color: #f9f9f9; /* Feature item background color */
+    padding: 30px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px; /* Add margin to space items evenly */
+}
+
+.feature h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.feature .cta-button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.feature .cta-button:hover {
+    background-color: #555;
+}
+/* Update your "base.css" file with the following styles */
+
+/* Hero Section */
+.hero {
+   
+    background-size: cover; /* Ensure the image covers the entire section */
+    
+    padding: 150px 0;
+    text-align: center;
+    position: relative; /* Add this line to establish a new stacking context */
+    filter: brightness(0.9);
+
+}
+
+
+.hero h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.hero::before {
+    content: "";
+    background: url('image/im4.jpeg') center/cover no-repeat;
+    background-size: cover;
+    filter: brightness(0.3); /* Apply the filter to the background image */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Place it behind the text */
+    
+}
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #ff9900;
+    color: #fff;
+    padding: 10px 20px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #f07f00;
+}
+
+.content-container {
+    position: relative;
+   padding: 5%;
+}
+
+.background-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('image/oc.jpg') no-repeat center center/cover;
+    background-size: cover;
+    filter: brightness(0.5); /* Adjust the brightness of the background image */
+    z-index: -1;
+} 
+
+.text-container {
+    padding: 150px 0 0; /* Add padding to push content down */
+    color: #f3eeee;
+    list-style: none; /* Remove bullets from lists */
+    font-size: 20px;
+    font-weight: bold;
+
+    
+}
+.text-container ul {
+    list-style: none;
+}
+
+.text-container h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.text-container p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    
+}
+.customs-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('image/c.jpg') no-repeat center center/cover;
+    background-size: cover;
+    filter: brightness(0.3); /* Adjust the brightness of the background image */
+    z-index: -1;
+}
+.air-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('image/ai.jpg') no-repeat center center/cover;
+    background-size: cover;
+    filter: brightness(0.5); /* Adjust the brightness of the background image */
+    z-index: -1;
+}
+.rail-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('image/r.jpg') no-repeat center center/cover;
+    background-size: cover;
+    filter: brightness(0.5); /* Adjust the brightness of the background image */
+    z-index: -1;
+}
+.distribution-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('image/di.jpeg') no-repeat center center/cover;
+    background-size: cover;
+    filter: brightness(0.5); /* Adjust the brightness of the background image */
+    z-index: -1;
+}
+.warehouse {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('image/wa.png') no-repeat center center/cover;
+    background-size: cover;
+    filter: brightness(0.5); /* Adjust the brightness of the background image */
+    z-index: -1;
+}
+
+.quote{
+    padding: 20px;
+    margin: 0 auto;
+    width: 500px;
+    background-color: #f8f8f8;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: left; /* Align form content to the left */
+    margin-bottom: 5%;
+    margin-top: 5%;
+
+}
+.foll {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.foll h2 {
+    margin: 0;
+}
+
+.all {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.social-media {
+    margin: 20px 0;
+}
+
+.social-media a {
+    color: #fff;
+    font-size: 24px;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social-text {
+    display: block;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+/* Add this to your "base.css" file */
+
+.quote-section {
+    background-color: #f8f8f8;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.quote-form {
+    max-width: 500px;
+    margin: 50px auto;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+form input,
+form select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form input[type="submit"]:hover {
+    background-color: #555;
+}
+
+/* Update your "base.css" file */
+
+/* Update your "base.css" file */
+
+.contact {
+    position: relative;
+    background-size: cover;
+    padding: 100px 0;
+}
+
+.contact::before {
+    content: "";
+    background: url('image/t.jpg') center/cover no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    filter: brightness(0.8);
+}
+
+.contact .content {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contact h1 {
+    font-size: 32px;
+    color: #fff;
+}
+
+.contactForm {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form input[type="text"],
+form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form input[type="submit"]:hover {
+    background-color: #555;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.contactInfo {
+    flex: 1 1 300px;
+    margin: 10px;
+}
+
+.box {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.icon {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.text {
+    color: #fff;
+}
+.about-section img{
+ 
+  
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    width: 25%; /* Set width for each item with some margin */
+    margin-bottom: 20px; /* Add some bottom margin for spacing */
+    box-sizing: border-box; /* Include padding and border in the total width */
+    border-radius: 10px; /* Add border-radius for a rounded look */
+    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
+    display: flex;
+    
+  }
+  .vi{
+    margin-left: 5%;
+    font-size: 20px;
+   
+    
+  }
+  .about-section {
+    display: flex;
+    align-items: center; /* Vertically align items */
+  }
+  
+  .mi {
+    flex: 1; /* Take up available space */
+    margin-right: 20px; /* Adjust margin as needed for spacing */
+    font-size: 20px;
+  }
+  
+  .mi-image img {
+    max-width: 100%; /* Ensure the image doesn't exceed its container */
+    height: auto; /* Maintain aspect ratio */
+    font-size: 20px;
+    width: 300px;
+    margin-right: 60%; 
+    
+  }
+  
+  /* Style the "te" section with the band name */
+  .te {
+    
+    text-align: center;
+    padding: 50px;
+    
+  }
+  
+  .hi {
+    font-size: 36px;
+    margin: 10px 0;
+    margin-top: 5%;
+  }
+  
+  /* Style the "about-us-container" section */
+  .about-us-container {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Style headers */
+  .about-header h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .about-sectio h3 {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+  
+  /* Style paragraphs */
+  .about-section p {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+  
+  /* Style the band member cards */
+  .team-member, .band-member {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .team-member img, .band-member img {
+    max-width: 20%;
+    border-radius: 30%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .team-member h4, .band-member h4 {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  .team-member p, .band-member p {
+    font-size: 14px;
+    color: #777;
+    margin: 5px 0;
+  }
+  
+  /* Style the "vision," "mission," and "values" sections */
+  .va, .mi, .mi-image {
+    display: inline-block;
+    vertical-align: top;
+  }
+  
+  .va, .mi {
+    width: 70%;
+    padding: 10px;
+  }
+  
+  .va img, .mi-image img {
+    max-width: 100%;
+  }
+  
+  /* Style the "Why Choose Zaabu Band" section */
+  .about-section-va {
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin: 20px;
+  }
+  .team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .team-member {
+    width: calc(33.33% - 20px); /* 20px is for margin between items */
+    text-align: center;
+    margin: 10px;
+  }
+  
+  .team-member img {
+    max-width: 60%;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .team-member h4 {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  .team-member p {
+    font-size: 14px;
+    color: #777;
+    margin: 5px 0;
+  }
+  
